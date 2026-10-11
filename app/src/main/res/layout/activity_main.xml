@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Persistence Demo"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp" />
+
+        <!-- SharedPreferences -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SharedPreferences"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnSaveName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE NAME" />
+
+        <TextView
+            android:id="@+id/tvSavedName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saved Name: "
+            android:textSize="18sp"
+            android:padding="10dp" />
+
+        <!-- SQLite -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SQLite Database"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:paddingTop="25dp"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter student name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter course"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnAddStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD STUDENT" />
+
+        <TextView
+            android:id="@+id/tvStudents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Students:"
+            android:textSize="18sp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>
